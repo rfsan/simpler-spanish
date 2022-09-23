@@ -1,0 +1,44 @@
+{
+  "name": "simpler-spanish",
+  "version": "0.0.1",
+  "description": "Simpler Spanish",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "eslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfsan/simpler-spanish.git"
+  },
+  "keywords": [
+    "javascript",
+    "spanish"
+  ],
+  "author": "rfsan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfsan/simpler-spanish/issues"
+  },
+  "homepage": "https://github.com/rfsan/simpler-spanish#readme",
+  "devDependencies": {
+    "@types/jest": "^29.0.3",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^29.0.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.8.3"
+  }
+}
