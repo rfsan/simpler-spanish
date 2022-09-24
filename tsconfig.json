@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "lib": ["es2022"],
+    "target": "ES2022",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./lib",
-    "strict": true
+    "outDir": "lib",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": ["src/**/*.ts"]
 }
