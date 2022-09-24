@@ -14,12 +14,12 @@
   - `güe` a `gue`. Ejemplo: bilingüe a bilingue.
   - `güi` a `gui`. Ejemplo: pingüino a pinguino.
 
-## LL y Y (TODO)
+### LL y Y (TODO)
 
 - Unificación del sonido de la ye.
   - `ll` a `y`. Ejemplo: lluvia a yuvia.
 
-## B y V
+### B y V
 
 - Unificación del sonido de la be.
   - `v` a `b`. Ejemplo: vaca a baca.
