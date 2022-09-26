@@ -1,25 +1,51 @@
-# Español más simple (simpler-spanish)
+# Ortografía del español simplificada (simpler-spanish)
+
+Modificaciones ortográficas para que haya una unidad real entre el lenguaje oral y el escrito.
 
 ## Simplificaciones
 
-### G y J
+### 1. División de los sonidos de la ***G*** y la ***J***
 
-- Unificación del sonido de la jota:
-  - `ge` a `je`. Ejemplo: gente a jente.
-  - `gi` a `ji`. Ejemplo: gitana a jitana.
+- Unificación del sonido de la jota.
+  - `ge` a `je` (e.g. jenialidad, jente).
+  - `gi` a `ji` (e.g. jitana).
 - Unificación del sonido gutural de la ge:
-  - `gue` a `ge`. Ejemplo: guerra a gerra.
-  - `gui` a `gi`. Ejemplo: guitarra a gitarra.
-- Quitar las diéresis.
-  - `güe` a `gue`. Ejemplo: bilingüe a bilingue.
-  - `güi` a `gui`. Ejemplo: pingüino a pinguino.
+  - `gue` a `ge` (e.g. guerra a gerra).
+  - `gui` a `gi` (e.g. guitarra a gitarra).
+- Quitar las diéresis porque ya no serían necesarias.
+  - `güe` a `gue` (e.g. bilingue).
+  - `güi` a `gui` (e.g. pinguino).
 
-### LL y Y (TODO)
+### 2. Unificación entre la ***Y*** y la ***LL***
 
-- Unificación del sonido de la ye.
-  - `ll` a `y`. Ejemplo: lluvia a yuvia.
+- `ll` a `y` (e.g. lluvia a yuvia).
 
-### B y V
+### 3. Unificación entre la ***B*** y la ***V***
 
-- Unificación del sonido de la be.
-  - `v` a `b`. Ejemplo: vaca a baca.
+- `v` a `b` (e.g. baca, berso).
+
+### Letras que dejarían de usarse
+
+- `v`
+
+## TODO
+
+- Cada vez que suba un commit a GitHub
+  - Actualizar la versión del paquete.
+  - Correr los tests.
+  - Subir a npm.
+  - Actualizar la información en GitHub.
+- Añadir `eslint`.
+- Añadir `prettier`.
+- (Core) Por ahora solo funciona para minúsculas. Incluir soporte para mayúsculas y minúsculas.
+- (Simplificación) `sa`, `se`, `si`, `so`, `su` para todo sonido con ese. Ejemplo: sapato, semento.
+- (Simplificación) `ka`, `ke`, `ki`, `ko`, `ku` para todo sonido con k. Ejemplo: keso, ke, karro.
+- (Simplificación) Quitar las `h`s mudas. Ejemplo, ombre.
+- (Mejora) Optimizar la aplicación de las transformaciones.
+
+## Referencias
+
+- <https://ontranslation.es/ortografia/>
+- <https://catalogo.senalmemoria.co/cgi-bin/koha/opac-detail.pl?biblionumber=29751>
+- <https://www.youtube.com/watch?v=F8bBhRmQd1w>
+- <https://www.youtube.com/watch?v=VpkneIesi60>
